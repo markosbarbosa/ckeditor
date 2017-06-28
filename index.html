@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste CKEditor</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="ckeditor.js"></script>
+
+</head>
+<body>
+
+<form method="post" action="processa.php">
+	<textarea id="editor1" name="editor1"></textarea>
+	<br>
+	<textarea id="editor2" name="editor1"></textarea>
+	<button type="submit">Enviar</button>
+</form>
+
+
+<script type="text/javascript">
+
+	CKEDITOR.replace('editor1');
+	CKEDITOR.replace('editor2', {toolbar: 'Simples'});
+
+</script>
+
+</body>
+</html>
